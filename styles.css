@@ -1,135 +1,89 @@
-h1{
-    font-size: 3rem;
-}
+/* Base styles for larger screens (laptops and desktops) */
+    body {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
 
-h2{
-    font-size: 1.3rem;
-    padding-left: 10px;
-    font-style: italic;
-    font-weight: lighter;
-}
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
 
-p{
-    font-size: 1rem;
-    padding-left: 10px;
-    font-style: italic;
-    font-weight:bold;
-}
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
 
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
+    nav li {
+      margin: 0 20px;
+    }
 
+    nav a {
+      text-decoration: none;
+      color: white;
+    }
 
-.banner img{
-    width: 100%;
-    height:auto;
-    max-width: 1460px;
-    padding: 20px;
-    
-}
+    .hamburger-menu {
+      display: none; /* Initially hidden on larger screens */
+      cursor: pointer;
+      font-size: 24px;
+    }
 
-nav {
-    margin: 20px;
-    padding: 20px;
-    background-color: #333;
-}
-  
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    display: inline;
-    list-style-type: none;
-}
-  
-nav li {
-    float: left;
-}
-  
-nav a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding-left:20px;
-  padding-right:20px;
-  text-decoration: none;
-}
+    main {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-nav a:hover{
-     text-decoration: underline;
-}
-    
+    section {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-section{
-    display: flex;
-}
+    article {
+      text-align: center;
+      margin: 20px;
+      flex: 0 0 calc(33.33% - 40px);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 5%;
+    }
 
-article{
-    width: 33.33%;
-    display: inline-block;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5%;
-    margin: 20px;
-}
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    article img {
+      height: 200px;
+    }
 
-article img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
+    /* Media query for tablets and phones */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
 
-footer {
-    background-color: #333;
-    padding-top: 50px;
-}
-  
-footer div {
-    width: 50%;
-    display: inline-block;
-    vertical-align: middle;
-}
-  
-footer div:first-child {
-    text-align: left;
-}
-  
-footer div:last-child {
-    text-align: right;
-}
-  
-footer img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-left: 20px;
-}
-  
-footer p {
-    color: white;
-    font-size: 1rem;
-}
+      header {
+        background-color: #555;
+      }
 
-a{
-    color: white;
-}
+      nav ul {
+        display: none; /* Hide the regular nav on tablets and phones */
+      }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: black;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .button:hover {
-    background-color: #333;
-  }
-  
+      .hamburger-menu {
+        display: block; /* Show the hamburger menu button on tablets and phones */
+      }
+
+      article {
+        flex: 0 0 calc(50% - 40px);
+      }
+    }
