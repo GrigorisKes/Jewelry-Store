@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mangata & Gallo</title>
-  <meta name="description" content="Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries">
+  <meta name="description" content="Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings, and anniversaries">
   <meta name="author" content="Mangata and Gallo Luxury Jewelry">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -13,42 +13,43 @@
     <div class="logo">
       <img src="images/Asset 1@3x.png" alt="Logo">
     </div>
-  </header>
-  <nav>
-    <ul>
+    <div class="hamburger-menu" onclick="toggleNav()">&#9776;</div>
+    <nav id="main-nav">
+      <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="earrings.html">EARRINGS</a></li>
         <li><a href="rings.html">RINGS</a></li>
         <li><a href="bracelets.html">BRACELETS</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </header>
   <main>
     <section>
-        <div class="banner">
-            <img src="images/banner.png" alt="Promotional Banner">
-        </div>
+      <div class="banner">
+        <img src="images/banner.png" alt="Promotional Banner">
+      </div>
     </section>
     <section>
-        <article>
-            <h2>Explore the World of Women's Jewelry</h2>
-            <img src="images/image1.png" alt="Woman with jewelry">
-            <p>Immerse yourself in a tapestry of dazzling gemstones, lustrous pearls, and precious metals meticulously crafted into stunning necklaces, bracelets, earrings, and rings.</p>
-            <a href="woman.html" class="button">Explore</a>
-        </article>
-        <article>
-            <h2>Discover Exquisite Men's Jewelry</h2>
-            <img src="images/image2.png" alt="Man with jewelry">
-            <p>Explore the endless possibilities of materials, from sleek sterling silver and timeless gold to rugged leather and unconventional combinations. </p>
-            <a href="man.html" class="button">Explore</a>
-        </article>
-        <article>
-            <h2>Embrace Timeless Jewelry</h2>
-            <img src="images/image3.png" alt="Woman with jewelry">
-            <p>In a world where trends come and go, timeless jewelry offers a sanctuary of enduring beauty and grace.Express your individuality with pieces that resonate with your soul.</p>
-            <a href="timeless.html" class="button">Explore</a>
-        </article>
+      <article>
+        <h2>Explore the World of Women's Jewelry</h2>
+        <img src="images/image1.png" alt="Woman with jewelry">
+        <p>Immerse yourself in a tapestry of dazzling gemstones, lustrous pearls, and precious metals meticulously crafted into stunning necklaces, bracelets, earrings, and rings.</p>
+        <a href="woman.html" class="button">Explore</a>
+      </article>
+      <article>
+        <h2>Discover Exquisite Men's Jewelry</h2>
+        <img src="images/image2.png" alt="Man with jewelry">
+        <p>Explore the endless possibilities of materials, from sleek sterling silver and timeless gold to rugged leather and unconventional combinations.</p>
+        <a href="man.html" class="button">Explore</a>
+      </article>
+      <article>
+        <h2>Embrace Timeless Jewelry</h2>
+        <img src="images/image3.png" alt="Woman with jewelry">
+        <p>In a world where trends come and go, timeless jewelry offers a sanctuary of enduring beauty and grace. Express your individuality with pieces that resonate with your soul.</p>
+        <a href="timeless.html" class="button">Explore</a>
+      </article>
     </section>
   </main>
 
@@ -56,9 +57,20 @@
     <div>
       <img src="images/Asset 4@3x.png" alt="Small Logo Footer">
     </div>
-    <div >
+    <div>
       <p>Copyright Mangata & Gallo</p>
     </div>
   </footer>
+
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById("main-nav");
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
